@@ -235,3 +235,1018 @@ margin-bottom:20px;
 
     transform:scale(1.1);
 }
+
+/* ================================
+   ACHIEVEMENTS PAGE
+================================ */
+
+.achievement-page {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #06111f;
+    color: white;
+    border-radius: 20px;
+}
+
+.achievement-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.achievement-header h1 {
+    font-size: 42px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.achievement-header p {
+    font-size: 18px;
+    color: #cbd5e1;
+}
+
+.achievement-page section {
+    margin-bottom: 45px;
+}
+
+.achievement-page section > h2 {
+    color: #facc15;
+    border-bottom: 2px solid #334155;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+
+/* Karate belts */
+
+.belt-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+}
+
+.belt-card {
+    background: #0d1b2a;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.belt-card:hover {
+    transform: translateY(-6px);
+    border-color: #38bdf8;
+}
+
+.belt-card h3 {
+    font-size: 14px;
+    color: #facc15;
+}
+
+.belt-card p {
+    color: #cbd5e1;
+}
+
+.number {
+    width: 28px;
+    height: 28px;
+    border: 2px solid #94a3b8;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Belt design */
+
+.belt {
+    width: 90%;
+    height: 18px;
+    margin: 25px auto;
+    border-radius: 4px;
+}
+
+.white-belt {
+    background: white;
+}
+
+.yellow-belt {
+    background: #facc15;
+}
+
+.striped-yellow {
+    background: linear-gradient(
+        90deg,
+        #facc15 0%,
+        #facc15 70%,
+        #111827 70%,
+        #111827 78%,
+        #facc15 78%
+    );
+}
+
+.orange-belt {
+    background: #f97316;
+}
+
+.striped-orange {
+    background: linear-gradient(
+        90deg,
+        #f97316 0%,
+        #f97316 70%,
+        white 70%,
+        white 78%,
+        #f97316 78%
+    );
+}
+
+.green-belt {
+    background: #16a34a;
+}
+
+
+/* Medal cards */
+
+.medal-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.achievement-card {
+    background: #0d1b2a;
+    border: 1px solid #334155;
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.medal-icon {
+    font-size: 55px;
+}
+
+.achievement-card h3 {
+    margin: 0;
+}
+
+.achievement-card p {
+    color: #cbd5e1;
+}
+
+.gold h3 {
+    color: #facc15;
+}
+
+.silver h3 {
+    color: #cbd5e1;
+}
+
+.bronze h3 {
+    color: #fb923c;
+}
+
+
+/* Two column section */
+
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.info-card {
+    background: #0d1b2a;
+    border: 1px solid #334155;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.info-card h3 {
+    color: #38bdf8;
+}
+
+.info-card p,
+.info-card li {
+    color: #e2e8f0;
+    line-height: 1.8;
+}
+
+.info-card ul {
+    columns: 2;
+}
+
+
+/* Participation */
+
+.participation-container {
+    background: #0d1b2a;
+    border: 1px solid #334155;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 25px;
+}
+
+.participation-card {
+    text-align: center;
+    border-right: 1px solid #475569;
+    padding: 15px;
+}
+
+.participation-card:last-child {
+    border-right: none;
+}
+
+.participation-card span {
+    font-size: 45px;
+}
+
+.participation-card h3 {
+    color: #e2e8f0;
+}
+
+
+/* Summary */
+
+.summary-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.summary-card {
+    background: #0d1b2a;
+    border: 1px solid #334155;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.summary-card h2 {
+    color: #facc15;
+    font-size: 20px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 5px;
+    border-bottom: 1px solid #334155;
+}
+
+.summary-row strong {
+    background: #14532d;
+    padding: 3px 10px;
+    border-radius: 6px;
+    color: #86efac;
+}
+
+.value {
+    margin: 15px 0;
+}
+
+.value strong {
+    color: #facc15;
+}
+
+.value p {
+    margin-left: 28px;
+    color: #cbd5e1;
+}
+
+
+/* Footer */
+
+.achievement-footer {
+    text-align: center;
+    padding: 25px;
+    border: 1px solid #475569;
+    border-radius: 15px;
+    color: #38bdf8;
+    font-size: 18px;
+}
+
+.achievement-footer strong {
+    color: #facc15;
+    font-size: 22px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 900px) {
+
+    .belt-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .medal-container {
+        grid-template-columns: 1fr;
+    }
+
+    .two-column {
+        grid-template-columns: 1fr;
+    }
+
+    .summary-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .achievement-page {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .achievement-header h1 {
+        font-size: 28px;
+    }
+
+    .belt-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .participation-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .participation-card {
+        border-right: none;
+    }
+
+    .info-card ul {
+        columns: 1;
+    }
+}
+
+/* ================================
+   KARATE BELT SHAPES
+   ================================ */
+
+.belt {
+    position: relative;
+    width: 170px;
+    height: 28px;
+    margin: 25px auto 35px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.35);
+}
+
+/* Belt knot */
+.belt::before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 62px;
+    top: -8px;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    background: inherit;
+    box-shadow: inset 0 0 0 6px rgba(0,0,0,0.08);
+    z-index: 2;
+}
+
+/* Left hanging end */
+.belt::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 70px;
+    left: 48px;
+    top: 12px;
+    background: inherit;
+    transform: rotate(35deg);
+    transform-origin: top center;
+    border-radius: 3px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+
+
+/* ================================
+   WHITE BELT
+   ================================ */
+
+.white-belt {
+    background: linear-gradient(
+        to bottom,
+        #ffffff,
+        #dddddd
+    );
+}
+
+
+/* ================================
+   YELLOW BELT
+   ================================ */
+
+.yellow-belt {
+    background: linear-gradient(
+        to bottom,
+        #ffe900,
+        #e5b900
+    );
+}
+
+
+/* ================================
+   STRIPED YELLOW BELT
+   ================================ */
+
+.striped-yellow-belt {
+    background: linear-gradient(
+        to bottom,
+        #ffe900,
+        #e5b900
+    );
+}
+
+.striped-yellow-belt {
+    border-right: 15px solid white;
+}
+
+
+/* ================================
+   ORANGE BELT
+   ================================ */
+
+.orange-belt {
+    background: linear-gradient(
+        to bottom,
+        #ff8b20,
+        #e86100
+    );
+}
+
+
+/* ================================
+   STRIPED ORANGE BELT
+   ================================ */
+
+.striped-orange-belt {
+    background: linear-gradient(
+        to bottom,
+        #ff8b20,
+        #e86100
+    );
+}
+
+.striped-orange-belt {
+    border-right: 15px solid white;
+}
+
+
+/* ================================
+   GREEN BELT
+   ================================ */
+
+.green-belt {
+    background: linear-gradient(
+        to bottom,
+        #29c85b,
+        #12943b
+    );
+}
+
+
+/* Belt card improvement */
+
+.belt-card {
+    position: relative;
+    overflow: visible;
+    min-height: 210px;
+    padding-top: 20px;
+}
+
+.belt-card:hover .belt {
+    transform: scale(1.08);
+    transition: 0.3s ease;
+}
+
+.belt-card .belt {
+    transition: 0.3s ease;
+}
+
+
+/* Make the belt tails look more realistic */
+
+.belt::after {
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        85% 100%,
+        50% 85%,
+        15% 100%
+    );
+}
+/* KARATE BELTS */
+/* REALISTIC KARATE BELT */
+
+.belt {
+    position: relative;
+    width: 180px;
+    height: 32px;
+    margin: 30px auto 55px;
+    border-radius: 3px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.25);
+}
+
+/* belt hanging ends */
+.belt::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 15px;
+    width: 42px;
+    height: 75px;
+    background: inherit;
+    transform: translateX(-50%) rotate(25deg);
+    clip-path: polygon(0 0, 100% 0, 70% 100%, 35% 75%);
+    z-index: 1;
+}
+
+/* knot */
+.belt::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -5px;
+    width: 42px;
+    height: 42px;
+    background: inherit;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    border: 3px solid rgba(0,0,0,0.15);
+    z-index: 3;
+}
+
+/* WHITE */
+.white-belt {
+    background: #f5f5f5;
+}
+
+/* YELLOW */
+.yellow-belt {
+    background: #f5c400;
+}
+
+/* STRIPED YELLOW */
+.striped-yellow-belt {
+    background: linear-gradient(
+        to right,
+        #f5c400 0%,
+        #f5c400 72%,
+        white 72%,
+        white 86%,
+        #f5c400 86%
+    );
+}
+
+/* ORANGE */
+.orange-belt {
+    background: #f47b20;
+}
+
+/* STRIPED ORANGE */
+.striped-orange-belt {
+    background: linear-gradient(
+        to right,
+        #f47b20 0%,
+        #f47b20 72%,
+        white 72%,
+        white 86%,
+        #f47b20 86%
+    );
+}
+
+/* GREEN */
+.green-belt {
+    background: #39a852;
+}
+.belt-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 100%;
+}
+
+.belt-card {
+    box-sizing: border-box;
+    min-height: 250px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #244a73;
+    border-radius: 15px;
+}
+/* =====================================================
+   GALLERY PAGE
+===================================================== */
+
+
+/* Gallery main section */
+
+.gallery-section {
+
+    max-width: 1200px;
+
+    margin: 50px auto;
+
+    padding: 20px;
+
+    text-align: center;
+
+}
+
+
+/* Gallery heading */
+
+.gallery-section h1 {
+
+    font-size: 42px;
+
+    color: #42f542;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* Intro text */
+
+.gallery-intro {
+
+    color: #270933;
+
+    font-size: 18px;
+
+    margin-bottom: 40px;
+
+}
+
+
+/* =====================================================
+   PHOTO + VIDEO GRID
+===================================================== */
+
+.gallery-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 22px;
+
+    width: 100%;
+
+}
+
+
+/* Individual gallery box */
+
+.gallery-item {
+
+    width: 100%;
+
+    height: 280px;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    background: #101d3d;
+
+    border: 1px solid #294b86;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+}
+
+
+/* =====================================================
+   PHOTOS
+===================================================== */
+
+.gallery-item img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition:
+        transform 0.4s ease;
+
+}
+
+
+/* Photo hover */
+
+.gallery-item:hover img {
+
+    transform: scale(1.06);
+
+}
+
+
+/* =====================================================
+   VIDEOS
+===================================================== */
+
+.gallery-item video {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    background: #000;
+
+}
+
+
+/* =====================================================
+   LIGHTBOX
+===================================================== */
+
+.lightbox {
+
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    z-index: 9999;
+
+    background:
+        rgba(0, 0, 0, 0.94);
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+/* Show lightbox */
+
+.lightbox.active {
+
+    display: flex;
+
+}
+
+
+/* Large image */
+
+#lightbox-image {
+
+    max-width: 85%;
+
+    max-height: 85vh;
+
+    object-fit: contain;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 0 40px rgba(0, 0, 0, 0.7);
+
+}
+
+
+/* =====================================================
+   CLOSE BUTTON
+===================================================== */
+
+.lightbox-close {
+
+    position: absolute;
+
+    top: 20px;
+
+    right: 30px;
+
+    width: 50px;
+
+    height: 50px;
+
+    background: transparent;
+
+    border: none;
+
+    color: white;
+
+    font-size: 48px;
+
+    line-height: 40px;
+
+    cursor: pointer;
+
+    z-index: 10001;
+
+}
+
+
+/* =====================================================
+   PREVIOUS / NEXT BUTTONS
+===================================================== */
+
+.lightbox-prev,
+.lightbox-next {
+
+    position: absolute;
+
+    top: 50%;
+
+    transform:
+        translateY(-50%);
+
+    width: 55px;
+
+    height: 55px;
+
+    border-radius: 50%;
+
+    border: none;
+
+    background:
+        rgba(255, 255, 255, 0.12);
+
+    color: white;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease;
+
+    z-index: 10001;
+
+}
+
+
+/* Button hover */
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+
+    background:
+        rgba(255, 255, 255, 0.28);
+
+}
+
+
+/* Previous */
+
+.lightbox-prev {
+
+    left: 25px;
+
+}
+
+
+/* Next */
+
+.lightbox-next {
+
+    right: 25px;
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .gallery-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+    }
+
+    .gallery-item {
+
+        height: 240px;
+
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .gallery-section {
+
+        margin: 30px auto;
+
+        padding: 15px;
+
+    }
+
+
+    .gallery-section h1 {
+
+        font-size: 32px;
+
+    }
+
+
+    .gallery-intro {
+
+        font-size: 16px;
+
+    }
+
+
+    .gallery-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+
+    }
+
+
+    .gallery-item {
+
+        height: 260px;
+
+    }
+
+
+    #lightbox-image {
+
+        max-width: 92%;
+
+        max-height: 80vh;
+
+    }
+
+
+    .lightbox-close {
+
+        top: 10px;
+
+        right: 12px;
+
+        font-size: 40px;
+
+    }
+
+
+    .lightbox-prev,
+    .lightbox-next {
+
+        width: 45px;
+
+        height: 45px;
+
+        font-size: 22px;
+
+    }
+
+
+    .lightbox-prev {
+
+        left: 8px;
+
+    }
+
+
+    .lightbox-next {
+
+        right: 8px;
+
+    }
+
+}
